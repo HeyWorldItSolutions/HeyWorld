@@ -1,0 +1,114 @@
+/* Container styling */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* First main content (text area) */
+.first-main-content {
+  width: 50%;
+  padding-right: 20px;
+}
+
+.main-title {
+  color: #003f7d;
+  font-weight: 700;
+  font-size: 76px;
+  text-align: left;
+}
+
+.main-desc {
+  color: #a1a1a1;
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Image styling */
+.home-first-img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- Responsiveness --- */
+
+/* For Tablets (up to 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-main-content {
+    width: 80%;
+    text-align: center;
+  }
+
+  .main-title {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .main-desc {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .home-first-img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/* For Mobile Devices (up to 600px) */
+@media (max-width: 600px) {
+  .first-main-content {
+    width: 90%; /* Further reduce the width on mobile */
+  }
+
+  .main-title {
+    font-size: 36px;
+  }
+
+  .main-desc {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .home-first-img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* For Large Screens (more than 1200px) */
+@media (min-width: 1200px) {
+  .container {
+    padding: 40px;
+  }
+
+  .first-main-content {
+    width: 40%;
+  }
+
+  .main-title {
+    font-size: 68px;
+  }
+
+  .main-desc {
+    font-size: 28px;
+  }
+
+  .home-first-img {
+    width: 500px;
+    height: auto;
+  }
+}

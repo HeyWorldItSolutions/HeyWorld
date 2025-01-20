@@ -1,0 +1,154 @@
+.wcj-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+}
+
+.who-can-join-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 35%;
+  box-sizing: border-box;
+  margin-bottom: 20px; /* Add spacing at the bottom */
+}
+
+.who-can-join-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  justify-content: space-between; /* Space between content on larger screens */
+}
+
+.wcj-title {
+  text-align: left;
+  color: #f98149;
+  font-size: 24px;
+}
+
+.wcj-main-title {
+  color: #003f7d;
+  font-weight: 700;
+  font-size: 54px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.wcj-card-number {
+  color: #003f7d;
+  font-weight: 700;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.wcj-card-desc {
+  color: #303030;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.wcj-image-container {
+  align-self: center;
+  margin-top: 20px; /* Add space between content and image */
+}
+
+@media (max-width: 1200px) {
+  .wcj-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .who-can-join-content-wrapper {
+    gap: 40px; /* Reduce gap on medium screens */
+  }
+
+  .who-can-join-content-section {
+    flex-basis: 45%;
+  }
+
+  .wcj-image-container img {
+    width: 60%;
+    height: auto;
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wcj-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .who-can-join-content-wrapper {
+    gap: 20px; /* Reduce gap on smaller screens */
+  }
+
+  .who-can-join-content-section {
+    flex-basis: 90%; /* Make the content take full width on smaller devices */
+  }
+
+  .wcj-title {
+    font-size: 20px; /* Adjust font size for mobile screens */
+  }
+
+  .wcj-main-title {
+    font-size: 32px; /* Adjust font size for mobile screens */
+    text-align: center;
+  }
+
+  .wcj-card-number {
+    font-size: 20px; /* Adjust font size for mobile screens */
+  }
+
+  .wcj-card-desc {
+    font-size: 18px; /* Adjust font size for mobile screens */
+  }
+
+  .wcj-image-container img {
+    width: 60%; /* Set the image width to 80% */
+    height: auto;
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wcj-title {
+    font-size: 18px; /* Smaller font size for extra small screens */
+  }
+
+  .wcj-main-title {
+    font-size: 28px; /* Smaller font size for extra small screens */
+    text-align: center;
+  }
+
+  .wcj-card-number {
+    font-size: 18px; /* Adjust font size for extra small screens */
+  }
+
+  .wcj-card-desc {
+    font-size: 16px; /* Adjust font size for extra small screens */
+  }
+
+  .who-can-join-content-wrapper {
+    gap: 15px; /* Smaller gap for mobile */
+  }
+
+  .who-can-join-content-section {
+    flex-basis: 100%; /* Take full width on mobile */
+  }
+
+  .wcj-image-container img {
+    width: 60%;
+    height: auto;
+    margin-left: auto; /* Center the image horizontally */
+    margin-right: auto; /* Center the image horizontally */
+    margin-bottom: 48px;
+  }
+}

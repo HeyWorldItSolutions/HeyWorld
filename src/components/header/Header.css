@@ -1,0 +1,83 @@
+.header-container {
+  width: 100%;
+  background-color: #222222;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+}
+
+.nav-logo-link img {
+  height: 140px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 28px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #cccccc;
+  /* color: #8A948C; */
+  font-weight: bold;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #fdfdfd;
+  border: 1px solid #4caf50;
+  color: #4caf50;
+  margin-right: 16px;
+}
+
+.create-account {
+  background-color: #4caf50;
+  color: #fff;
+  margin-right: 16px;
+}
+
+.header-container .active-link {
+  color: #f98149;
+}
+
+.contact-us-btn {
+  width: 120px;
+  height: 40px;
+  background-color: #f98149;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}

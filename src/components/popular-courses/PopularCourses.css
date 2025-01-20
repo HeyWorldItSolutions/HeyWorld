@@ -1,0 +1,122 @@
+.popular-courses-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  color: #003f7d;
+}
+
+/* For large screens (laptops and desktops) */
+@media (max-width: 1200px) {
+  .popular-courses-title {
+    font-size: 42px; /* Slightly smaller font size on medium devices */
+  }
+}
+
+/* For tablet screens */
+@media (max-width: 768px) {
+  .popular-courses-title {
+    font-size: 36px; /* Smaller font size for tablets */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+  .popular-courses-title {
+    font-size: 28px; /* Even smaller font size for mobile devices */
+  }
+}
+
+.card-img {
+  margin: 10px;
+  width: 110px;
+  height: 110px;
+}
+.courses-title-text {
+  color: #f98149;
+}
+
+.popular-courses-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 80px;
+}
+
+.course-card {
+  margin-bottom: 30px;
+  background-color: #003f7d;
+  width: 300px;
+  height: 280px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.course-card-content {
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.course-title {
+  color: #171725;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.course-desc {
+  color: #000000;
+  font-size: 14px;
+}
+
+.enroll-btn {
+  width: 110px;
+  height: 30px;
+  /* background-color: #fff;
+  color: #575757; */
+  background-color: #f98149;
+  color: #ffffff;
+  border: 1px solid #f98149;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.card-icon {
+  margin-right: 10px;
+}
+
+.download-btn {
+  width: 207.04px;
+  height: 40px;
+  background-color: #f98149;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.view-all-btn {
+  margin-top: 60px;
+  width: 280px;
+  height: 43px;
+  color: #ffffff;
+  background-color: #003f7d;
+  border: none;
+  border-radius: 8px;
+  font-size: 24px;
+}
